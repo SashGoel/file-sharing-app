@@ -5,7 +5,7 @@ dotenv.config();
 
 const DBConnection = async () => {
 
-    const MONGO_URI = `mongodb+srv://user:filesharing@file-sharing.kdhuyde.mongodb.net/?retryWrites=true&w=majority`;
+    const MONGO_URI = `mongodb+srv://user:<password goes here>@file-sharing.kdhuyde.mongodb.net/?retryWrites=true&w=majority`;
 
     try {
         await mongoose.connect(MONGO_URI, { useNewUrlParser: true });
